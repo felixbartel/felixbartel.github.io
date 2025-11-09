@@ -1,8 +1,8 @@
 :root{
-  /*--primary: #a10b70; Chemnitz University of Technoloy */
-  /*--primary: #ffdc00; UNSW yellow */
-  --primary: #50aab9; /* MIDS blue */
-  --secondary: #232f66; /* KU EI blue */
+  /*--primary: #a10b70; /* Chemnitz University of Technoloy */
+  --primary: #ffdc00; /* UNSW yellow */
+  /* --primary: #50aab9; /* MIDS blue */
+  --secondary: #000000;
   --lightgray: #e6e6e6;
   --darkgray: #555;
 }
@@ -25,7 +25,7 @@ header, footer, div.middle{
 
 header, footer{
   background-color: var(--primary);
-  color: white;
+  color: black;
 }
 
 header div:last-child{
@@ -62,7 +62,7 @@ div.twocolumns > :first-child{
 }
 header > div.twocolumns > :nth-child(2), footer > div.twocolumns > :nth-child(2){
   flex: 0 0 1px;
-  background-color: white;
+  background-color: black;
   height: calc(100% - 2rem);
 }
 div.twocolumns > :last-child{
@@ -106,7 +106,7 @@ nav ul li a.active{
 }
 
 nav ul li a:hover{
-  color: white;
+  color: black;
   background-color: var(--primary);
   text-decoration: underline;
   text-decoration-thickness: 0.15rem;
@@ -133,7 +133,7 @@ nav ul li ul li:last-child a{
 
 main h2{
   padding-left: 0.3rem;
-  color: white;
+  color: black;
   font-size: 1.5rem;
   background-color: var(--primary);
 }
@@ -174,10 +174,10 @@ main i.bx{
 
 main a{
   background-color: var(--primary);
-  color: white;
+  color: black;
   text-decoration-style: solid;
   text-underline-offset: 0.1rem;
-  text-decoration-color: white;
+  text-decoration-color: black;
 }
 
 main a:hover{
@@ -197,7 +197,7 @@ main div.linkbuttons{
 
 main div.linkbuttons a{
   background-color: var(--primary);
-  color: white;
+  color: black;
   text-decoration: none;
   border-radius: 0.3rem;
   border: 2px solid var(--primary);
