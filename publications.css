@@ -1,0 +1,15 @@
+main table td:nth-child(1){
+  width: 80%;
+}
+main table td:nth-child(1) span:nth-child(1){
+  font-weight:500;
+}
+main table td:nth-child(1) span:nth-child(2){
+}
+main table td:nth-child(1) span:last-child{
+  color: var(--darkgray);
+}
+main table td:nth-child(2){
+  width: 20%;
+  vertical-align: middle;
+}
