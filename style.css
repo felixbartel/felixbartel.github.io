@@ -1,7 +1,8 @@
 :root{
   /*--primary: #a10b70; Chemnitz University of Technoloy */
   /*--primary: #ffdc00; UNSW yellow */
-  --primary: #232f66; /* KU EI blue */
+  --primary: #50aab9; /* MIDS blue */
+  --secondary: #232f66; /* KU EI blue */
   --lightgray: #e6e6e6;
   --darkgray: #555;
 }
@@ -172,16 +173,16 @@ main i.bx{
 
 
 main a{
-  color: var(--primary);
-  background-color: default;
+  background-color: var(--primary);
+  color: white;
   text-decoration-style: solid;
   text-underline-offset: 0.1rem;
-  text-decoration-color: var(--primary);
+  text-decoration-color: white;
 }
 
 main a:hover{
   color: white;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   text-decoration: none;
   /*text-decoration: underline;
   text-decoration-style: solid;
@@ -206,9 +207,9 @@ main div.linkbuttons a{
 }
 
 main div.linkbuttons a:hover{
-  color: var(--primary);
-  background-color: white;
-  border-color: black;
+  color: white;
+  background-color: var(--secondary);
+  border-color: var(--secondary);
 }
 
 @media only screen and (max-width: 768px) {
