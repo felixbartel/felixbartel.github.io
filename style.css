@@ -1,8 +1,8 @@
 :root{
-  /*--primary: #a10b70; /* Chemnitz University of Technoloy */
-  --primary: #ffdc00; /* UNSW yellow */
-  /* --primary: #50aab9; /* MIDS blue */
-  --secondary: #000000;
+  --primary: #a10b70; /* Chemnitz University of Technoloy */
+  /*--primary: #ffdc00; /* UNSW yellow */
+  /*--primary: #50aab9; /* MIDS blue */
+  --secondary: white;
   --lightgray: #e6e6e6;
   --darkgray: #555;
 }
@@ -25,7 +25,7 @@ header, footer, div.middle{
 
 header, footer{
   background-color: var(--primary);
-  color: black;
+  color: var(--secondary);
 }
 
 header div:last-child{
@@ -62,7 +62,7 @@ div.twocolumns > :first-child{
 }
 header > div.twocolumns > :nth-child(2), footer > div.twocolumns > :nth-child(2){
   flex: 0 0 1px;
-  background-color: black;
+  background-color: var(--secondary);
   height: calc(100% - 2rem);
 }
 div.twocolumns > :last-child{
@@ -92,7 +92,7 @@ nav ul li a{
   text-decoration: none;
   font-size: 1.25rem;
   color: var(--darkgray);
-  border-top: 1px solid white;
+  border-top: 2px solid white;
 }
 
 nav ul li:first-child a{
@@ -106,9 +106,10 @@ nav ul li a.active{
 }
 
 nav ul li a:hover{
-  color: black;
+  color: var(--secondary);
   background-color: var(--primary);
   text-decoration: underline;
+  font-weight: 600;
   text-decoration-thickness: 0.15rem;
 }
 
@@ -133,7 +134,7 @@ nav ul li ul li:last-child a{
 
 main h2{
   padding-left: 0.3rem;
-  color: black;
+  color: var(--secondary);
   font-size: 1.5rem;
   background-color: var(--primary);
 }
@@ -174,14 +175,14 @@ main i.bx{
 
 main a{
   background-color: var(--primary);
-  color: black;
+  color: var(--secondary);
   text-decoration-style: solid;
   text-underline-offset: 0.1rem;
-  text-decoration-color: black;
+  text-decoration-color: var(--secondary);
 }
 
 main a:hover{
-  color: white;
+  color: var(--primary);
   background-color: var(--secondary);
   text-decoration: none;
   /*text-decoration: underline;
@@ -197,7 +198,7 @@ main div.linkbuttons{
 
 main div.linkbuttons a{
   background-color: var(--primary);
-  color: black;
+  color: var(--secondary);
   text-decoration: none;
   border-radius: 0.3rem;
   border: 2px solid var(--primary);
@@ -207,7 +208,7 @@ main div.linkbuttons a{
 }
 
 main div.linkbuttons a:hover{
-  color: white;
+  color: var(--primary);
   background-color: var(--secondary);
   border-color: var(--secondary);
 }
